@@ -1,0 +1,13 @@
+.h-100vh {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.h-50vh {
+  height: 50vh;
+  object-fit: cover;
+}
+
+.adventure-font {
+  font-family: 'Finger Paint', cursive;
+}
