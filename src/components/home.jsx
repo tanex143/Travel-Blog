@@ -1,5 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
+import {
+  faAngleDoubleRight,
+  faCalendarAlt,
+  faMapMarkerAlt,
+} from '@fortawesome/free-solid-svg-icons';
 import bgImg from '../images/indayBG.jpg';
 import inday from '../images/inday.png';
 import mountains from '../images/mountains.jpg';
@@ -43,7 +47,7 @@ const Home = () => {
             <img src={mountains} alt='mt' className='w-full h-50vh' />
             <div className='absolute top-0 left-0 text-center w-full h-full grid grid-cols-3'>
               <div className='col-start-2 my-auto'>
-                <h1 className='text-3xl font-semibold adventure-font'>
+                <h1 className='text-3xl font-semibold adventure-font tracking-wide'>
                   Mountains Overview
                 </h1>
                 <p className='py-2 italic'>
@@ -66,7 +70,7 @@ const Home = () => {
               <img src={seas} alt='sea' className='w-full h-50vh' />
               <div className='absolute top-0 left-0 text-center w-full h-full grid grid-cols-5'>
                 <div className='col-start-2 col-span-3 my-auto'>
-                  <h1 className='text-3xl font-semibold adventure-font'>
+                  <h1 className='text-3xl font-semibold adventure-font tracking-wide'>
                     Seas Overview
                   </h1>
                   <p className='py-2 italic'>
@@ -88,7 +92,7 @@ const Home = () => {
               <img src={falls} alt='falls' className='w-full h-50vh' />
               <div className='absolute top-0 left-0 text-center w-full h-full grid grid-cols-5'>
                 <div className='col-start-2 col-span-3 my-auto'>
-                  <h1 className='text-3xl font-semibold adventure-font'>
+                  <h1 className='text-3xl font-semibold adventure-font tracking-wide'>
                     Falls & Cold Spring Overview
                   </h1>
                   <p className='py-2 italic'>
@@ -105,6 +109,51 @@ const Home = () => {
                   </button>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='pb-20'>
+        <div className='container mx-auto'>
+          <div className='pb-10 w-full'>
+            <h1 className='text-4xl font-semibold'>Latest Posts</h1>
+            <p className='border-t-4 border-blue-400 w-full'></p>
+          </div>
+          <div className='shadow-xl rounded p-5 blue-gray'>
+            <h1 className='text-3xl font-semibold'>Sebu's Haven</h1>
+            <div className='py-3 flex gap-10'>
+              <p className='italic'>
+                <FontAwesomeIcon icon={faMapMarkerAlt} className='mr-2' />
+                Tagoloan, Misamis Oriental
+              </p>
+              <p className='italic'>
+                <FontAwesomeIcon icon={faCalendarAlt} className='mr-2' />
+                January 1, 2020
+              </p>
+            </div>
+            <div className='grid grid-cols-2'>
+              <img src={mountains} alt='img' className='w-full' />
+              <img src={mountains} alt='img' className='w-full' />
+            </div>
+            <div className='grid grid-cols-3'>
+              <img src={mountains} alt='img' className='w-full' />
+              <img src={mountains} alt='img' className='w-full' />
+              <img src={mountains} alt='img' className='w-full' />
+            </div>
+            <p className='italic py-4'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+              fugit nulla voluptatibus eligendi eum quidem nisi perspiciatis?
+              Ipsa nobis corporis quam reprehenderit laudantium dolore quaerat
+              consequuntur. Incidunt odit autem harum ad iste, ex tenetur
+              doloribus aut blanditiis maiores mollitia obcaecati in illum qui,
+              exercitationem unde ullam? Illo et facilis earum.
+            </p>
+            <div className='py-2'>
+              <button className='py-2 px-4 border border-blue-500 rounded hover:bg-blue-500 hover:text-white transition-all duration-500 ease-in-out '>
+                View More
+                <FontAwesomeIcon icon={faAngleDoubleRight} className='ml-2' />
+              </button>
             </div>
           </div>
         </div>
