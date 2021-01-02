@@ -37,9 +37,9 @@ const Home = () => {
         </div>
       </div>
 
-      {/* /////////////////BELOW HEADER///////////////////////// */}
+      {/* /////////////////DESTINATIONS SECTION///////////////////////// */}
       <section className='py-20'>
-        <div className='container mx-auto'>
+        <div className=''>
           <h1 className='text-center text-gray-600 md:text-6xl text-3xl adventure-font py-3 uppercase'>
             Destinations
           </h1>
