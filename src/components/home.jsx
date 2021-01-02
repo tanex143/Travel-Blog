@@ -9,6 +9,12 @@ import inday from '../images/inday.png';
 import mountains from '../images/mountains.jpg';
 import seas from '../images/seas.jpg';
 import falls from '../images/falls.jpg';
+import profile from '../images/profile.jpg';
+import profile2 from '../images/profile2.jpg';
+import {
+  faFacebookSquare,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
 
 const Home = () => {
   return (
@@ -120,40 +126,108 @@ const Home = () => {
             <h1 className='text-4xl font-semibold'>Latest Posts</h1>
             <p className='border-t-4 border-blue-400 w-full'></p>
           </div>
-          <div className='shadow-xl rounded p-5 blue-gray'>
-            <h1 className='text-3xl font-semibold'>Sebu's Haven</h1>
-            <div className='py-3 flex gap-10'>
-              <p className='italic'>
-                <FontAwesomeIcon icon={faMapMarkerAlt} className='mr-2' />
-                Tagoloan, Misamis Oriental
+          <div className='grid grid-cols-12 gap-10'>
+            <div className='col-start-1 col-span-9 shadow-xl rounded p-5 blue-gray'>
+              <h1 className='text-3xl font-semibold'>Sebu's Haven</h1>
+              <div className='py-3 flex gap-10'>
+                <p className='italic'>
+                  <FontAwesomeIcon icon={faMapMarkerAlt} className='mr-2' />
+                  Tagoloan, Misamis Oriental
+                </p>
+                <p className='italic'>
+                  <FontAwesomeIcon icon={faCalendarAlt} className='mr-2' />
+                  January 1, 2020
+                </p>
+              </div>
+              <div className='grid grid-cols-2'>
+                <img src={mountains} alt='img' className='w-full' />
+                <img src={mountains} alt='img' className='w-full' />
+              </div>
+              <div className='grid grid-cols-3'>
+                <img src={mountains} alt='img' className='w-full' />
+                <img src={mountains} alt='img' className='w-full' />
+                <img src={mountains} alt='img' className='w-full' />
+              </div>
+              <p className='italic py-4'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                fugit nulla voluptatibus eligendi eum quidem nisi perspiciatis?
+                Ipsa nobis corporis quam reprehenderit laudantium dolore quaerat
+                consequuntur. Incidunt odit autem harum ad iste, ex tenetur
+                doloribus aut blanditiis maiores mollitia obcaecati in illum
+                qui, exercitationem unde ullam? Illo et facilis earum.
               </p>
-              <p className='italic'>
-                <FontAwesomeIcon icon={faCalendarAlt} className='mr-2' />
-                January 1, 2020
-              </p>
+              <div className='py-2'>
+                <button className='py-2 px-4 border border-blue-500 rounded hover:bg-blue-500 hover:text-white transition-all duration-500 ease-in-out '>
+                  View More
+                  <FontAwesomeIcon icon={faAngleDoubleRight} className='ml-2' />
+                </button>
+              </div>
             </div>
-            <div className='grid grid-cols-2'>
-              <img src={mountains} alt='img' className='w-full' />
-              <img src={mountains} alt='img' className='w-full' />
-            </div>
-            <div className='grid grid-cols-3'>
-              <img src={mountains} alt='img' className='w-full' />
-              <img src={mountains} alt='img' className='w-full' />
-              <img src={mountains} alt='img' className='w-full' />
-            </div>
-            <p className='italic py-4'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-              fugit nulla voluptatibus eligendi eum quidem nisi perspiciatis?
-              Ipsa nobis corporis quam reprehenderit laudantium dolore quaerat
-              consequuntur. Incidunt odit autem harum ad iste, ex tenetur
-              doloribus aut blanditiis maiores mollitia obcaecati in illum qui,
-              exercitationem unde ullam? Illo et facilis earum.
-            </p>
-            <div className='py-2'>
-              <button className='py-2 px-4 border border-blue-500 rounded hover:bg-blue-500 hover:text-white transition-all duration-500 ease-in-out '>
-                View More
-                <FontAwesomeIcon icon={faAngleDoubleRight} className='ml-2' />
-              </button>
+            <div className='col-start-10 col-span-3'>
+              <div className='pb-8'>
+                <h1 className='mb-4 pb-1 border-b-4 border-blue-400 text-lg font-semibold'>
+                  Like Us on Facebook
+                </h1>
+
+                <div className='relative'>
+                  <img src={profile} alt='img' className='w-full h-48' />
+                  <div className='absolute top-0 left-0 ml-2 mt-2 flex gap-2'>
+                    <img
+                      src={profile2}
+                      alt='img'
+                      className='rounded-full w-14 border-2 border-white '
+                    />
+                    <a
+                      href='#'
+                      className='font-semibold text-lg hover:text-blue-800 text-white'
+                    >
+                      Inday Jenny The Explorer
+                    </a>
+                  </div>
+                  <div className='absolute bottom-0 left-0 mb-2 ml-2'>
+                    <div className='py-1 px-2 bg-gray-200 flex hover:bg-blue-400 cursor-pointer hover:text-white'>
+                      <div className='h-full my-auto'>
+                        <FontAwesomeIcon
+                          icon={faFacebookSquare}
+                          className='text-blue-500 mr-1 text-lg'
+                        />
+                      </div>
+                      <h1>Like Page</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h1 className='mb-4 pb-1 border-b-4 border-blue-400 text-lg font-semibold'>
+                Subscribe Us on Youtube
+              </h1>
+
+              <div className='relative'>
+                <img src={profile} alt='img' className='w-full h-48' />
+                <div className='absolute top-0 left-0 ml-2 mt-2 flex gap-2'>
+                  <img
+                    src={profile2}
+                    alt='img'
+                    className='rounded-full w-14 border-2 border-white '
+                  />
+                  <a
+                    href='#'
+                    className='font-semibold text-lg hover:text-blue-800 text-white'
+                  >
+                    Inday Jenny The Explorer
+                  </a>
+                </div>
+                <div className='absolute bottom-0 left-0 mb-2 ml-2'>
+                  <div className='py-1 px-2 bg-gray-200 flex hover:bg-blue-400 cursor-pointer hover:text-white'>
+                    <div className='h-full my-auto'>
+                      <FontAwesomeIcon
+                        icon={faYoutube}
+                        className='text-red-500 mr-1 text-lg'
+                      />
+                    </div>
+                    <h1>Subscribe Page</h1>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
