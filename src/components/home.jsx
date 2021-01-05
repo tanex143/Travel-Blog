@@ -49,10 +49,10 @@ const Home = () => {
           <h1 className='text-center text-gray-600 md:text-6xl text-3xl adventure-font py-3 uppercase'>
             Destinations
           </h1>
-          <div className='w-full relative'>
+          <div className='w-full relative text-white'>
             <img src={mountains} alt='mt' className='w-full h-50vh' />
-            <div className='absolute top-0 left-0 text-center w-full h-full grid grid-cols-3'>
-              <div className='col-start-2 my-auto'>
+            <div className='absolute top-0 left-0 text-center w-full h-full grid grid-cols-5'>
+              <div className='col-start-2 col-span-3 my-auto'>
                 <h1 className='text-3xl font-semibold adventure-font tracking-wide'>
                   Mountains Overview
                 </h1>
@@ -72,7 +72,7 @@ const Home = () => {
             </div>
           </div>
           <div className='grid grid-cols-2'>
-            <div className='h-50vh relative'>
+            <div className='h-50vh relative text-white'>
               <img src={seas} alt='sea' className='w-full h-50vh' />
               <div className='absolute top-0 left-0 text-center w-full h-full grid grid-cols-5'>
                 <div className='col-start-2 col-span-3 my-auto'>
@@ -117,17 +117,40 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <div className='h-50vh relative text-white'>
+            <img src={mountains} alt='falls' className='w-full h-50vh' />
+            <div className='absolute top-0 left-0 text-center w-full h-full grid grid-cols-5'>
+              <div className='col-start-2 col-span-3 my-auto'>
+                <h1 className='text-3xl font-semibold adventure-font tracking-wide'>
+                  Swimming Pools Overview
+                </h1>
+                <p className='py-2 italic'>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Numquam, vitae praesentium. Ex id architecto error ducimus cum
+                  aspernatur consectetur accusamus?
+                </p>
+                <button className='py-1 px-8 border border-blue-600 rounded text-white hover:bg-blue-600 transition-all duration-300 ease-in'>
+                  View
+                  <FontAwesomeIcon
+                    icon={faAngleDoubleRight}
+                    className='ml-3 text-sm'
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
+      {/* //////////////////LATEST POST SECTION////////////////////////////// */}
       <section className='pb-20'>
         <div className='container mx-auto'>
-          <div className='pb-10 w-full'>
+          <div className='pb-10 w-full px-5'>
             <h1 className='text-4xl font-semibold'>Latest Posts</h1>
             <p className='border-t-4 border-blue-400 w-full'></p>
           </div>
           <div className='grid grid-cols-12 gap-10'>
-            <div className='col-start-1 col-span-9 shadow-xl rounded p-5 blue-gray'>
+            <div className='col-start-1 col-span-9 shadow-xl rounded p-5 ml-5 blue-gray'>
               <h1 className='text-3xl font-semibold'>Sebu's Haven</h1>
               <div className='py-3 flex gap-10'>
                 <p className='italic'>
@@ -163,7 +186,7 @@ const Home = () => {
                 </button>
               </div>
             </div>
-            <div className='col-start-10 col-span-3'>
+            <div className='col-start-10 col-span-3 pr-5 py-5'>
               <div className='pb-8'>
                 <h1 className='mb-4 pb-1 border-b-4 border-blue-400 text-lg font-semibold'>
                   Like Us on Facebook
@@ -224,7 +247,7 @@ const Home = () => {
                         className='text-red-500 mr-1 text-lg'
                       />
                     </div>
-                    <h1>Subscribe Page</h1>
+                    <h1>Subscribe Channel</h1>
                   </div>
                 </div>
               </div>
